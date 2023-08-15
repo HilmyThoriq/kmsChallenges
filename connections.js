@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
     const makeNewConnection = (uri) => {
      const db = mongoose.createConnection(uri, {
       useNewUrlParser: true
+      serverSelectionTimeoutMS: 30000   
      });
 
      db.on("error", function (error) {
