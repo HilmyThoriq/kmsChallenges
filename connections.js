@@ -23,6 +23,6 @@ const mongoose = require("mongoose");
     };
 
     const dbConnection = 
-     makeNewConnection({"mongodb+srv://hilmythoriq09:vTEBkSm2DkCN9MJj@cluster0.6vgowfk.mongodb.net/?retryWrites=true&w=majority"});
+     makeNewConnection("mongodb+srv://hilmythoriq09:vTEBkSm2DkCN9MJj@cluster0.6vgowfk.mongodb.net/?retryWrites=true&w=majority");
 
     module.exports = dbConnection;
