@@ -4,7 +4,7 @@ const ipModel = require("./ip.model");
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.enable('trust proxy')
+// app.enable('trust proxy')
 app.use(cors());
 app.get("/", (req, res) => res.type('html').send(html));
 app.get("/location", (req, res) => res.json({ location: "cikarang" }));
